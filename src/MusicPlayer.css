@@ -1,0 +1,44 @@
+.music-player-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 2.5rem auto;
+  background: rgba(255,255,255,0.95);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #b3121722;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.music-title {
+  color: #b31217;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+  margin-bottom: 1rem;
+}
+.music-info {
+  margin-bottom: 1rem;
+}
+.music-song {
+  font-weight: bold;
+  color: #b31217;
+  margin-right: 0.7rem;
+}
+.music-artist {
+  color: #7b1fa2;
+}
+.music-controls button {
+  background: #b31217;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 1.2rem;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.music-controls button:hover {
+  background: #7b1fa2;
+}
+.music-audio {
+  width: 100%;
+  margin-bottom: 1rem;
+} 

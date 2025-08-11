@@ -1,0 +1,26 @@
+{
+  "title": "İyiki Sen Sevgilim",
+  "description": "Birlikte geçirdiğimiz her an, bu sitede sonsuza dek yaşayacak...",
+  "bannerText": "Birlikte her an, sonsuz bir masal gibi...",
+  "welcomeMessage": "Hoş geldin Gülüm…\n\nBazen karşımda minik bir kız çocuğu varmış gibi seviyorum seni…\nKüçücük bir kalbin varmış gibi sarıyorum seni…\nBazen sessizce avuçlarından öpüyorum…\n\n\"Gülüm\" diyorum sana…\nÇünkü gülüşüm oldun sen…\nÇünkü gözlerinle açan bir gül bahçesi gibisin bana.\n\nKalbim sana ait bir yuva artık…\nBu site de o yuvanın küçük dijital penceresi.\n\nBaktıkça seni göreceğim…\nOkudukça seni hissedeceğim…\nVe her satırda yeniden seveceğim seni.\n\n01.01.2025 – bizim hikâyemizin yazıldığı ilk gün…\nAma bu sayfa, her gün yeniden yazılan bir \"seni seviyorum\" cümlesi…\n\nSenin için, sadece senin için...",
+  "gallery": [
+    {
+      "type": "image",
+      "src": "https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80",
+      "alt": "Birlikte gülüşümüz"
+    },
+    {
+      "type": "video",
+      "src": "https://www.w3schools.com/html/mov_bbb.mp4",
+      "alt": "Birlikte çektiğimiz video"
+    }
+  ],
+  "music": [
+    {
+      "title": "Sonsuza Dek",
+      "artist": "Aşkımızın şarkısı",
+      "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    }
+  ],
+  "timeline": []
+}

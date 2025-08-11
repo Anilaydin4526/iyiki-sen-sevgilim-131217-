@@ -1,0 +1,22 @@
+.parallax-banner {
+  width: 100vw;
+  height: 100vh;
+  min-height: 400px;
+  background: linear-gradient(120deg, #b31217 0%, #ee9ca7 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.parallax-content {
+  background: rgba(255,255,255,0.85);
+  border-radius: 18px;
+  padding: 1.2rem 2.5rem;
+  box-shadow: 0 4px 24px #b3121722;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+  color: #b31217;
+  font-size: 1.5rem;
+  text-align: center;
+} 

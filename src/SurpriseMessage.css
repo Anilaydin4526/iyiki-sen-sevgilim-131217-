@@ -1,0 +1,57 @@
+.surprise-container {
+  margin: 3rem auto 2rem auto;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.surprise-btn {
+  background: linear-gradient(90deg, #b31217 0%, #7b1fa2 100%);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+  cursor: pointer;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 2px 12px #b3121711;
+  transition: background 0.2s, transform 0.2s;
+}
+.surprise-btn:hover {
+  background: linear-gradient(90deg, #7b1fa2 0%, #b31217 100%);
+  transform: scale(1.05);
+}
+
+.surprise-message {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff6fa;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px #b3121722;
+  padding: 0 1.5rem;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.5s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.surprise-message.open {
+  max-height: 300px;
+  opacity: 1;
+  padding: 1.5rem;
+  transform: scale(1);
+}
+.surprise-message h3 {
+  color: #b31217;
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+.surprise-message p {
+  color: #7b1fa2;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+@media (max-width: 600px) {
+  .surprise-btn { font-size: 1rem; padding: 0.6rem 1.2rem; }
+  .surprise-message { font-size: 0.95rem; }
+} 

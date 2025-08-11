@@ -1,0 +1,399 @@
+.admin-login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+}
+
+.admin-login-container h2 {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.admin-login-container input {
+  width: 300px;
+  padding: 15px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.admin-login-container button {
+  width: 300px;
+  padding: 15px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-login-container button:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+}
+
+.admin-error {
+  color: #ff6b6b;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Admin Panel Styles */
+.admin-section {
+  margin: 40px 0;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.admin-controls {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-controls h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* Timeline Controls */
+.admin-timeline-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr auto;
+  gap: 10px;
+  align-items: start;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-timeline-item input,
+.admin-timeline-item textarea {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 14px;
+}
+
+.admin-timeline-item textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.media-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.media-upload input[type="file"] {
+  padding: 8px 12px;
+  font-size: 12px;
+  border: 2px dashed #ff6b6b;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.media-upload input[type="file"]:hover {
+  border-color: #ff4757;
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.media-upload input[type="file"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Yükleme durumu için stil */
+.upload-status {
+  font-size: 12px;
+  color: #4CAF50;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.upload-error {
+  color: #f44336;
+}
+
+/* Upload info box */
+.upload-info {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  color: #388e3c;
+}
+
+.upload-info p {
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  color: #388e3c;
+}
+
+.upload-info ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #388e3c;
+}
+
+.upload-info li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #388e3c;
+}
+
+/* Gallery Controls */
+.admin-gallery-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-gallery-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr auto;
+  gap: 10px;
+  align-items: start;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-gallery-item select,
+.admin-gallery-item input {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 14px;
+}
+
+/* Music Controls */
+.admin-music-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-music-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr auto;
+  gap: 10px;
+  align-items: start;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.admin-music-item input {
+  padding: 8px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  font-size: 14px;
+}
+
+/* Buttons */
+.add-btn {
+  padding: 12px 24px;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;
+  transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #d32f2f;
+}
+
+/* Inline Editing Styles */
+.edit-container {
+  display: inline-block;
+  width: 100%;
+}
+
+.edit-input,
+.edit-textarea,
+.edit-textarea-large {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff6b6b;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.edit-textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.edit-textarea-large {
+  min-height: 200px;
+  resize: vertical;
+}
+
+/* Clickable text styling */
+.main-title span,
+.subtitle span,
+.welcome-message span {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.main-title span:hover,
+.subtitle span:hover,
+.welcome-message span:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-timeline-item,
+  .admin-gallery-item,
+  .admin-music-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .admin-login-container input,
+  .admin-login-container button {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .edit-input,
+  .edit-textarea,
+  .edit-textarea-large {
+    font-size: 14px;
+  }
+}
+
+.admin-section h2,
+.admin-controls h3,
+.admin-timeline-item input[type="text"],
+.admin-timeline-item textarea,
+.admin-timeline-item .media-upload input[type="text"],
+.admin-gallery-item input[type="text"],
+.admin-gallery-item textarea,
+.admin-gallery-item select,
+.admin-music-item input[type="text"],
+.admin-music-item textarea {
+  color: #b31217 !important;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive !important;
+}
+
+/* Admin paneldeki input ve textarea placeholderlarını da kırmızı yap */
+.admin-timeline-item input[type="text"]::placeholder,
+.admin-timeline-item textarea::placeholder,
+.admin-gallery-item input[type="text"]::placeholder,
+.admin-gallery-item textarea::placeholder,
+.admin-music-item input[type="text"]::placeholder,
+.admin-music-item textarea::placeholder {
+  color: #b31217a0;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+}
+
+.admin-datepicker {
+  color: #b31217 !important;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive !important;
+  background: rgba(255,255,255,0.95);
+  border: 2px solid #b31217;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.admin-datepicker::placeholder {
+  color: #b31217a0;
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+}
+
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.react-datepicker {
+  font-family: 'Segoe Script', 'Comic Sans MS', cursive;
+  border-radius: 12px;
+  border: 2px solid #b31217;
+  box-shadow: 0 4px 24px #b3121711;
+}
+
+.react-datepicker__header {
+  background: #fff6fa;
+  border-bottom: 1px solid #b31217;
+}
+
+.react-datepicker__day--selected, .react-datepicker__day--keyboard-selected {
+  background: #b31217;
+  color: #fff;
+}
+
+.react-datepicker__day--today {
+  color: #b31217;
+  font-weight: bold;
+} 
